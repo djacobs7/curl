@@ -841,8 +841,8 @@ Android
    Method using a configure cross-compile (tested with Android NDK r7c, r8):
       - prepare the toolchain of the Android NDK for standalone use; this can
         be done by invoking the script:
-        ./build/tools/make-standalone-toolchain.sh
-        which creates a usual cross-compile toolchain. Lets assume that you put
+        ./build/tools/make-standalone-toolchain.sh from your Android ndk directory (e.g. android-ndk-r10b ).
+        This creates a usual cross-compile toolchain. Lets assume that you put
         this toolchain below /opt then invoke configure with something like:
         export PATH=/opt/arm-linux-androideabi-4.4.3/bin:$PATH
         ./configure --host=arm-linux-androideabi [more configure options]
